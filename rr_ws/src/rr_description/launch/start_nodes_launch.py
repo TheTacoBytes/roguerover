@@ -8,7 +8,7 @@ import subprocess
 
 def generate_launch_description():
     urdf_file = os.path.join(
-        os.getenv('HOME'), 'RogueRover/rr_ws/src/rr_description/urdf/RogueRover.urdf')
+        os.getenv('HOME'), 'rr_ws/rr_ws/src/rr_description/urdf/RogueRover.urdf')
 
     # # Use v4l2-ctl to set exposure and focus with correct parameters
     # subprocess.run(['v4l2-ctl', '-d', '/dev/video0', '--set-ctrl', 'auto_exposure=3'])
@@ -50,11 +50,11 @@ def generate_launch_description():
         #     ]
         # ),
         # LIDAR node
-        # IncludeLaunchDescription(
-        #     PythonLaunchDescriptionSource([
-        #         FindPackageShare('ldlidar_stl_ros2'), '/launch/ld19.launch.py'
-        #     ])
-        # ),
+        IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            FindPackageShare('sllidar_ros2'), '/launch/sllidar_c1_launch.py'
+        ])
+        ),
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -63,10 +63,10 @@ def generate_launch_description():
             parameters=[{'robot_description': open(urdf_file).read()}]
         ),
         # OLED display node
-        Node(
-            package='rr_display',
-            executable='display',
-            name='rr_display',
-            output='screen'
-        ),
+        # Node(
+        #     package='rr_display',
+        #     executable='display',
+        #     name='rr_display',
+        #     output='screen'
+        # ),
     ])

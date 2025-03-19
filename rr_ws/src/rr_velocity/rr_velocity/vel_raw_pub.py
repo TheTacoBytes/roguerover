@@ -1,186 +1,182 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # encoding: utf-8
 
+import sys
 import math
-import numpy as np
+import random
+import threading
 from math import pi
 from time import sleep
+from Rosmaster_Lib import Rosmaster
+
 import rclpy
 from rclpy.node import Node
-from rr_msgs.msg import ArmJoint
-from rr_msgs.srv import RobotArmArray
-from Rosmaster_Lib import Rosmaster
+from std_msgs.msg import String, Float32, Int32, Bool
 from geometry_msgs.msg import Twist
-from std_msgs.msg import Float32, Int32, Bool
 from sensor_msgs.msg import Imu, MagneticField, JointState
+from rclpy.clock import Clock
 
-class RogueRoverDriver(Node):
-    def __init__(self,name):
+car_type_dic = {
+    'R2': 5,
+    'X3': 1,
+    'NONE': -1
+}
+
+class yahboomcar_driver(Node):
+    def __init__(self, name):
         super().__init__(name)
+        global car_type_dic
         self.RA2DE = 180 / pi
         self.car = Rosmaster()
-        self.car.set_car_type(2)
-        self.pos = [0, 0, 0, 0]
+        self.car.set_car_type(1)
+        
+        # Get parameters
+        self.declare_parameter('car_type', 'X3')
+        self.car_type = self.get_parameter('car_type').get_parameter_value().string_value
+        self.get_logger().info(f"Car type: {self.car_type}")
+        
+        self.declare_parameter('imu_link', 'imu_link')
+        self.imu_link = self.get_parameter('imu_link').get_parameter_value().string_value
+        self.get_logger().info(f"IMU link: {self.imu_link}")
+        
+        self.declare_parameter('Prefix', "")
+        self.Prefix = self.get_parameter('Prefix').get_parameter_value().string_value
+        self.get_logger().info(f"Prefix: {self.Prefix}")
+        
+        self.declare_parameter('xlinear_limit', 1.0)
+        self.xlinear_limit = self.get_parameter('xlinear_limit').get_parameter_value().double_value
+        self.get_logger().info(f"xlinear_limit: {self.xlinear_limit}")
+        
+        self.declare_parameter('ylinear_limit', 1.0)
+        self.ylinear_limit = self.get_parameter('ylinear_limit').get_parameter_value().double_value
+        self.get_logger().info(f"ylinear_limit: {self.ylinear_limit}")
+        
+        self.declare_parameter('angular_limit', 5.0)
+        self.angular_limit = self.get_parameter('angular_limit').get_parameter_value().double_value
+        self.get_logger().info(f"angular_limit: {self.angular_limit}")
 
-        self.get_logger().info("Initializing RogueRoverDriver node")
-
-        # Declare parameters
-        self.imu_link = self.declare_parameter("imu_link", "imu_link").value
-        self.Prefix = self.declare_parameter("prefix", "").value
-        self.xlinear_limit = self.declare_parameter('xlinear_speed_limit', 1.0).value
-        self.ylinear_limit = self.declare_parameter('ylinear_speed_limit', 1.0).value
-        self.angular_limit = self.declare_parameter('angular_speed_limit', 5.0).value
-
-        # Create subscriptions
-        self.sub_cmd_vel = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
-        self.sub_RGBLight = self.create_subscription(Int32, "RGBLight", self.RGBLightcallback, 10)
-        self.sub_Buzzer = self.create_subscription(Bool, "Buzzer", self.Buzzercallback, 10)
-        self.sub_Arm = self.create_subscription(ArmJoint, "TargetAngle", self.Armcallback, 10)
+        # Create subscribers
+        self.sub_cmd_vel = self.create_subscription(Twist, "cmd_vel", self.cmd_vel_callback, 1)
+        self.sub_RGBLight = self.create_subscription(Int32, "RGBLight", self.RGBLightcallback, 100)
+        self.sub_BUzzer = self.create_subscription(Bool, "Buzzer", self.Buzzercallback, 100)
 
         # Create publishers
-        self.ArmPubUpdate = self.create_publisher(ArmJoint, "ArmAngleUpdate", 10)
-        self.EdiPublisher = self.create_publisher(Float32, 'edition', 10)
-        self.volPublisher = self.create_publisher(Float32, 'voltage', 10)
-        self.staPublisher = self.create_publisher(JointState, 'joint_states', 10)
-        self.velPublisher = self.create_publisher(Twist, "/vel_raw", 10)
-        self.imuPublisher = self.create_publisher(Imu, "/imu/data_raw", 10)
-        self.magPublisher = self.create_publisher(MagneticField, "imu/mag", 10)
+        self.EdiPublisher = self.create_publisher(Float32, "edition", 100)
+        self.volPublisher = self.create_publisher(Float32, "voltage", 100)
+        self.staPublisher = self.create_publisher(JointState, "joint_states", 100)
+        self.velPublisher = self.create_publisher(Twist, "vel_raw", 50)
+        self.imuPublisher = self.create_publisher(Imu, "imu/data_raw", 100)
+        self.magPublisher = self.create_publisher(MagneticField, "imu/mag", 100)
 
-        # Create service
-        self.srv_armAngle = self.create_service(RobotArmArray, "CurrentAngle", self.srv_Armcallback)
+        # Create timer
+        self.timer = self.create_timer(0.1, self.pub_data)
 
-        # Initialize joints and set up timer for periodic publishing
-        self.joints = [90, 145, 0, 45, 90, 30]
-        self.car.set_uart_servo_angle_array(self.joints, 1000)
+        # Initialize variable(s)
+        self.edition = Float32()
+        self.edition.data = 1.0
+        
+        # Start thread to receive data from the hardware
         self.car.create_receive_threading()
 
-        # Use timer to call pub_data every 0.05 seconds
-        self.timer = self.create_timer(0.05, self.pub_data)
+    # Callback for velocity commands
+    def cmd_vel_callback(self, msg):
+        self.get_logger().info(f"message type: {msg}")
+        
+        if msg is None:
+            self.get_logger().warn("No message received (None)!")
+            self.get_logger().info(f"Received type: {type(msg)}")
+            return
+        
+        if not isinstance(msg, Twist):
+            return
+        vx = msg.linear.x * 1.0
+        vy = msg.linear.y * 1.0
+        angular = msg.angular.z * 1.0
+        self.car.set_car_motion(vx, vy, angular)
 
+    def RGBLightcallback(self, msg):
+        if not isinstance(msg, Int32):
+            return
+        for i in range(3):
+            self.car.set_colorful_effect(msg.data, 6, parm=1)
+
+    def Buzzercallback(self, msg):
+        if not isinstance(msg, Bool):
+            return
+        if msg.data:
+            for i in range(3):
+                self.car.set_beep(1)
+        else:
+            for i in range(3):
+                self.car.set_beep(0)
+
+    # Timer callback to publish sensor data and joint states
     def pub_data(self):
+        time_stamp = Clock().now()
+        
+        # Prepare sensor messages
         imu = Imu()
         twist = Twist()
         battery = Float32()
         edition = Float32()
         mag = MagneticField()
+        
+        # Prepare joint state message with 4 joints matching the URDF
+        state = JointState()
+        state.header.stamp = time_stamp.to_msg()
+        state.header.frame_id = "joint_states"
+        if len(self.Prefix) == 0:
+            state.name = ["back_right_joint", "back_left_joint", "front_right_joint", "front_left_joint"]
+        else:
+            state.name = [self.Prefix + "back_right_joint", self.Prefix + "back_left_joint", 
+                          self.Prefix + "front_right_joint", self.Prefix + "front_left_joint"]
+        # Set joint positions to zero (or update with real feedback if available)
+        state.position = [0.0 for _ in state.name]
+        state.velocity = [0.0 for _ in state.name]
+        state.effort = [0.0 for _ in state.name]
 
-        edition.data = float(self.car.get_version())
-        battery.data = self.car.get_battery_voltage()
-
+        # Get data from hardware
+        edition.data = self.car.get_version() * 1.0
+        battery.data = self.car.get_battery_voltage() * 1.0
         ax, ay, az = self.car.get_accelerometer_data()
         gx, gy, gz = self.car.get_gyroscope_data()
         mx, my, mz = self.car.get_magnetometer_data()
         vx, vy, angular = self.car.get_motion_data()
-        # print(self.car.get_motion_data())
 
-        imu.header.stamp = self.get_clock().now().to_msg()
+        # Populate IMU message
+        imu.header.stamp = time_stamp.to_msg()
         imu.header.frame_id = self.imu_link
-        imu.linear_acceleration.x = ax
-        imu.linear_acceleration.y = ay
-        imu.linear_acceleration.z = az
-        imu.angular_velocity.x = gx
-        imu.angular_velocity.y = gy
-        imu.angular_velocity.z = gz
+        imu.linear_acceleration.x = ax * 1.0
+        imu.linear_acceleration.y = ay * 1.0
+        imu.linear_acceleration.z = az * 1.0
+        imu.angular_velocity.x = gx * 1.0
+        imu.angular_velocity.y = gy * 1.0
+        imu.angular_velocity.z = gz * 1.0
 
-        mag.header.stamp = self.get_clock().now().to_msg()
+        # Populate magnetometer message
+        mag.header.stamp = time_stamp.to_msg()
         mag.header.frame_id = self.imu_link
-        mag.magnetic_field.x = mx
-        mag.magnetic_field.y = my
-        mag.magnetic_field.z = mz
+        mag.magnetic_field.x = mx * 1.0
+        mag.magnetic_field.y = my * 1.0
+        mag.magnetic_field.z = mz * 1.0
 
-        twist.linear.x = vx
-        twist.linear.y = vy
-        twist.angular.z = angular
+        # Populate Twist message for motion data
+        twist.linear.x = vx * 1.0
+        twist.linear.y = vy * 1.0
+        twist.angular.z = angular * 1.0
 
-        # Publish data
+        # Publish messages
         self.velPublisher.publish(twist)
-        # print(f"Publishing Twist message: linear.x = {twist.linear.x}, linear.y = {twist.linear.y}, angular.z = {twist.angular.z}")
-
         self.imuPublisher.publish(imu)
         self.magPublisher.publish(mag)
         self.volPublisher.publish(battery)
         self.EdiPublisher.publish(edition)
-        self.joints_states_update()
-
-    def cmd_vel_callback(self, msg):
-        if not isinstance(msg, Twist):
-            return
-        vx = msg.linear.x
-        vy = msg.linear.y
-        angular = msg.angular.z
-        self.car.set_car_motion(vx, vy, angular)
-
-    def Armcallback(self, msg):
-        if not isinstance(msg, ArmJoint):
-            return
-        arm_joint = ArmJoint()
-        
-        if msg.joints:
-            arm_joint.joints = self.joints
-            for _ in range(2):
-                self.car.set_uart_servo_angle_array(msg.joints, msg.run_time)
-                self.joints = list(msg.joints)
-                self.ArmPubUpdate.publish(arm_joint)
-                sleep(0.01)
-        else:
-            arm_joint.id = msg.id
-            arm_joint.angle = msg.angle
-            for _ in range(2):
-                self.car.set_uart_servo_angle(msg.id, msg.angle, msg.run_time)
-                self.joints[msg.id - 1] = msg.angle
-                self.ArmPubUpdate.publish(arm_joint)
-                sleep(0.01)
-                
-        self.joints_states_update()
-        sleep(0.001)
-
-    def srv_Armcallback(self, request, response):
-        response.angles = self.car.get_uart_servo_angle_array()
-        return response
-
-    def RGBLightcallback(self, msg):
-        if not isinstance(msg, Int32):
-            return
-        for _ in range(3):
-            self.car.set_colorful_effect(msg.data, 6, parm=1)
-            sleep(0.01)
-
-    def Buzzercallback(self, msg):
-        if not isinstance(msg, Bool):
-            return
-        for _ in range(3):
-            self.car.set_beep(1 if msg.data else 0)
-            sleep(0.01)
-
-    def joints_states_update(self):
-        state = JointState()
-        state.header.stamp = self.get_clock().now().to_msg()
-        state.header.frame_id = "joint_states"
-
-        state.name = [f"{self.Prefix}/{name}" for name in ["arm_joint1", "arm_joint2", "arm_joint3", "arm_joint4", "arm_joint5", "grip_joint"]]
-
-        joints = self.joints[:]
-        joints[5] = np.interp(joints[5], [30, 180], [0, 90])
-        mid = np.array([90, 90, 90, 90, 90, 90])
-        position_src = (np.array(joints) - mid) * (pi / 180)
-
-        state.position = position_src.tolist()
         self.staPublisher.publish(state)
 
-    def cancel(self):
-        self.car.set_car_motion(0, 0, 0)
-        self.get_logger().info("Shutting down the robot...")
-
-def main(args=None):
-    rclpy.init(args=args)
-    driver = RogueRoverDriver('driver_node')
-    try:
-        rclpy.spin(driver)
-    except KeyboardInterrupt:
-        driver.cancel()
-    finally:
-        driver.destroy_node()
-        rclpy.shutdown()
+def main():
+    rclpy.init()
+    driver = yahboomcar_driver('driver_node')
+    rclpy.spin(driver)
 
 if __name__ == '__main__':
     main()
