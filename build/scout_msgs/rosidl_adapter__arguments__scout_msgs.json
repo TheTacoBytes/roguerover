@@ -1,0 +1,10 @@
+{
+  "package_name": "scout_msgs",
+  "non_idl_tuples": [
+    "/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs:msg/ScoutActuatorState.msg",
+    "/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs:msg/ScoutLightCmd.msg",
+    "/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs:msg/ScoutLightState.msg",
+    "/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs:msg/ScoutRCState.msg",
+    "/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs:msg/ScoutStatus.msg"
+  ]
+}

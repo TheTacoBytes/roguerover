@@ -1,0 +1,20 @@
+[0.568s] Invoking command in '/home/beto/ROS_PROJECTS/scout/src/scout_slam': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/scout_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_slam build --build-base /home/beto/ROS_PROJECTS/scout/build/scout_slam/build install --record /home/beto/ROS_PROJECTS/scout/build/scout_slam/install.log --single-version-externally-managed install_data
+[0.732s] running egg_info
+[0.732s] writing ../../build/scout_slam/scout_slam.egg-info/PKG-INFO
+[0.732s] writing dependency_links to ../../build/scout_slam/scout_slam.egg-info/dependency_links.txt
+[0.733s] writing entry points to ../../build/scout_slam/scout_slam.egg-info/entry_points.txt
+[0.733s] writing requirements to ../../build/scout_slam/scout_slam.egg-info/requires.txt
+[0.733s] writing top-level names to ../../build/scout_slam/scout_slam.egg-info/top_level.txt
+[0.733s] reading manifest file '../../build/scout_slam/scout_slam.egg-info/SOURCES.txt'
+[0.734s] writing manifest file '../../build/scout_slam/scout_slam.egg-info/SOURCES.txt'
+[0.734s] running build
+[0.734s] running build_py
+[0.734s] running install
+[0.734s] running install_lib
+[0.735s] running install_data
+[0.735s] running install_egg_info
+[0.736s] removing '/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages/scout_slam-0.0.0-py3.10.egg-info' (and everything under it)
+[0.736s] Copying ../../build/scout_slam/scout_slam.egg-info to /home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages/scout_slam-0.0.0-py3.10.egg-info
+[0.736s] running install_scripts
+[0.750s] writing list of installed files to '/home/beto/ROS_PROJECTS/scout/build/scout_slam/install.log'
+[0.768s] Invoked command in '/home/beto/ROS_PROJECTS/scout/src/scout_slam' returned '0': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/scout_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_slam build --build-base /home/beto/ROS_PROJECTS/scout/build/scout_slam/build install --record /home/beto/ROS_PROJECTS/scout/build/scout_slam/install.log --single-version-externally-managed install_data

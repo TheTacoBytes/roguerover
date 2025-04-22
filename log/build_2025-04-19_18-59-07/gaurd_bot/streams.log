@@ -1,0 +1,33 @@
+[1.176s] Invoking command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data
+[1.906s] running egg_info
+[1.909s] creating ../../build/gaurd_bot/gaurd_bot.egg-info
+[1.911s] writing ../../build/gaurd_bot/gaurd_bot.egg-info/PKG-INFO
+[1.912s] writing dependency_links to ../../build/gaurd_bot/gaurd_bot.egg-info/dependency_links.txt
+[1.914s] writing entry points to ../../build/gaurd_bot/gaurd_bot.egg-info/entry_points.txt
+[1.918s] writing requirements to ../../build/gaurd_bot/gaurd_bot.egg-info/requires.txt
+[1.918s] writing top-level names to ../../build/gaurd_bot/gaurd_bot.egg-info/top_level.txt
+[1.918s] writing manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+[1.923s] reading manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+[1.926s] writing manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+[1.927s] running build
+[1.927s] running build_py
+[1.927s] creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build
+[1.928s] creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib
+[1.928s] creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot
+[1.928s] copying gaurd_bot/__init__.py -> /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot
+[1.928s] running install
+[1.929s] running install_lib
+[1.929s] creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot
+[1.930s] copying /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot/__init__.py -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot
+[1.930s] byte-compiling /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot/__init__.py to __init__.cpython-310.pyc
+[1.930s] running install_data
+[1.948s] creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index
+[1.949s] creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index
+[1.949s] creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index/packages
+[1.949s] copying resource/gaurd_bot -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index/packages
+[1.949s] copying package.xml -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot
+[1.949s] running install_egg_info
+[1.949s] Copying ../../build/gaurd_bot/gaurd_bot.egg-info to /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot-0.0.0-py3.10.egg-info
+[1.949s] running install_scripts
+[1.959s] writing list of installed files to '/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log'
+[2.015s] Invoked command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot' returned '0': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data

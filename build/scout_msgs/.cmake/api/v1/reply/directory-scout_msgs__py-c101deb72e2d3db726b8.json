@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "scout_msgs__py",
+		"source" : "/home/beto/ROS_PROJECTS/scout/build/scout_msgs/scout_msgs__py"
+	}
+}

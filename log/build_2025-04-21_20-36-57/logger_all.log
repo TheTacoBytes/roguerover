@@ -1,0 +1,447 @@
+[0.058s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79f831783fa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79f831783af0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79f831783af0>>, mixin_verb=('build',))
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.146s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/beto/ROS_PROJECTS/scout'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/gaurd_bot) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gaurd_bot' with type 'ros.ament_python' and name 'gaurd_bot'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_base) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scout_ros2/scout_base' with type 'ros.ament_cmake' and name 'scout_base'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_description) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scout_ros2/scout_description' with type 'ros.ament_cmake' and name 'scout_description'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_ros2/scout_msgs) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scout_ros2/scout_msgs' with type 'ros.ament_cmake' and name 'scout_msgs'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_slam) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scout_slam' with type 'ros.ament_python' and name 'scout_slam'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_sdk) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_sdk' with type 'ros.catkin' and name 'ugv_sdk'
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.177s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/beto/ROS_PROJECTS/scout/install
+[0.178s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 318 installed packages in /opt/ros/humble
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'gaurd_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'gaurd_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/gaurd_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'scout_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/scout_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/scout_description', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_description', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'scout_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'scout_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/scout_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/scout_msgs', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'scout_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/scout_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/scout_slam', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/scout_slam', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'ugv_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/ugv_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/ugv_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'scout_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'scout_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/beto/ROS_PROJECTS/scout/build/scout_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/beto/ROS_PROJECTS/scout/install/scout_base', 'merge_install': False, 'path': '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_base', 'symlink_install': False, 'test_result_base': None}
+[0.199s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.200s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs'
+[0.201s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.204s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/ugv_sdk' with build type 'catkin'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/beto/ROS_PROJECTS/scout/src/ugv_sdk'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot' with build type 'ament_python'
+[0.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('gaurd_bot', 'ament_prefix_path')
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/ament_prefix_path.ps1'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/ament_prefix_path.dsv'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/ament_prefix_path.sh'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_description' with build type 'ament_cmake'
+[0.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_description'
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.210s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/scout_slam' with build type 'ament_python'
+[0.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_slam', 'ament_prefix_path')
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/ament_prefix_path.ps1'
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/ament_prefix_path.dsv'
+[0.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/ament_prefix_path.sh'
+[0.213s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.213s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_msgs -- -j20 -l20
+[0.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/ugv_sdk': /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/ugv_sdk -- -j20 -l20
+[0.378s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot'
+[0.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_description': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_description -- -j20 -l20
+[0.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/ugv_sdk' returned '0': /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/ugv_sdk -- -j20 -l20
+[0.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/ugv_sdk': /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/ugv_sdk
+[0.541s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/beto/ROS_PROJECTS/scout/src/scout_slam'
+[0.541s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.541s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/ugv_sdk' returned '0': /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/ugv_sdk
+[0.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_sdk', 'ros_package_path')
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/ros_package_path.ps1'
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/ros_package_path.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/ros_package_path.sh'
+[0.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_sdk', 'pkg_config_path')
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path.ps1'
+[0.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path.dsv'
+[0.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path.sh'
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_sdk', 'pkg_config_path_multiarch')
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path_multiarch.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path_multiarch.dsv'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/pkg_config_path_multiarch.sh'
+[0.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_sdk)
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk' for CMake module files
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk' for CMake config files
+[0.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_sdk', 'cmake_prefix_path')
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/cmake_prefix_path.ps1'
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/cmake_prefix_path.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/hook/cmake_prefix_path.sh'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/lib'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/bin'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/lib/pkgconfig/ugv_sdk.pc'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/lib/python3.10/site-packages'
+[0.557s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/bin'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/package.ps1'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/package.dsv'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/package.sh'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/package.bash'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/ugv_sdk/package.zsh'
+[0.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/ugv_sdk/share/colcon-core/packages/ugv_sdk)
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_description -- -j20 -l20
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_description': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_description
+[0.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_msgs -- -j20 -l20
+[0.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_msgs
+[0.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_description)
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description' for CMake module files
+[0.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_description
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description' for CMake config files
+[0.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_description', 'cmake_prefix_path')
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.ps1'
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.dsv'
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.sh'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/bin'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/lib/pkgconfig/scout_description.pc'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/lib/python3.10/site-packages'
+[0.577s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/bin'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.ps1'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.dsv'
+[0.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.sh'
+[0.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.bash'
+[0.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.zsh'
+[0.579s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_description/share/colcon-core/packages/scout_description)
+[0.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_description)
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description' for CMake module files
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_description', 'cmake_prefix_path')
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.ps1'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.dsv'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/hook/cmake_prefix_path.sh'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/bin'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/lib/pkgconfig/scout_description.pc'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/lib/python3.10/site-packages'
+[0.581s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_description/bin'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.ps1'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.sh'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.bash'
+[0.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_description/share/scout_description/package.zsh'
+[0.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_description/share/colcon-core/packages/scout_description)
+[0.640s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_msgs)
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs' for CMake module files
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs' for CMake config files
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_msgs
+[0.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_msgs', 'cmake_prefix_path')
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.dsv'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.sh'
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib'
+[0.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_msgs', 'ld_library_path_lib')
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.ps1'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.dsv'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.sh'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/bin'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/pkgconfig/scout_msgs.pc'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/python3.10/site-packages'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/bin'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.ps1'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.dsv'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.sh'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.bash'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.zsh'
+[0.647s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/colcon-core/packages/scout_msgs)
+[0.647s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_msgs)
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs' for CMake module files
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs' for CMake config files
+[0.648s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_msgs', 'cmake_prefix_path')
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.ps1'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.dsv'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/cmake_prefix_path.sh'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib'
+[0.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_msgs', 'ld_library_path_lib')
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.ps1'
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.dsv'
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/hook/ld_library_path_lib.sh'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/bin'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/pkgconfig/scout_msgs.pc'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/python3.10/site-packages'
+[0.650s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/bin'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.ps1'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.dsv'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.sh'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.bash'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.zsh'
+[0.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/colcon-core/packages/scout_msgs)
+[0.651s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_base' with build type 'ament_cmake'
+[0.651s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_base'
+[0.651s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_base': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_base -- -j20 -l20
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_base' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_base -- -j20 -l20
+[0.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_base': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_base
+[0.722s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_base)
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base' for CMake module files
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_base' returned '0': CMAKE_PREFIX_PATH=/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble:/home/beto/ROS_PROJECTS/scout/install/ugv_sdk:/home/beto/ROS_PROJECTS/scout/install/scout_msgs:/home/beto/ROS_PROJECTS/scout/install/scout_base:/home/beto/ROS_PROJECTS/scout/install/scout_description /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_base
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base' for CMake config files
+[0.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_base', 'cmake_prefix_path')
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.ps1'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.sh'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/bin'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib/pkgconfig/scout_base.pc'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib/python3.10/site-packages'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/bin'
+[0.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.sh'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.bash'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.zsh'
+[0.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_base/share/colcon-core/packages/scout_base)
+[0.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_base)
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base' for CMake module files
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base' for CMake config files
+[0.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_base', 'cmake_prefix_path')
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/hook/cmake_prefix_path.sh'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/bin'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib/pkgconfig/scout_base.pc'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/lib/python3.10/site-packages'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_base/bin'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.ps1'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.dsv'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.sh'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.bash'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_base/share/scout_base/package.zsh'
+[0.731s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_base/share/colcon-core/packages/scout_base)
+[0.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data
+[0.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/beto/ROS_PROJECTS/scout/src/scout_slam': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/scout_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_slam build --build-base /home/beto/ROS_PROJECTS/scout/build/scout_slam/build install --record /home/beto/ROS_PROJECTS/scout/build/scout_slam/install.log --single-version-externally-managed install_data
+[0.912s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot' for CMake module files
+[0.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot' returned '0': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot' for CMake config files
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/bin'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/pkgconfig/gaurd_bot.pc'
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages'
+[0.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('gaurd_bot', 'pythonpath')
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/pythonpath.ps1'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/pythonpath.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/hook/pythonpath.sh'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/bin'
+[0.915s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gaurd_bot)
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/package.ps1'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/package.dsv'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/package.sh'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/package.bash'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot/package.zsh'
+[0.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/colcon-core/packages/gaurd_bot)
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam' for CMake module files
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam' for CMake config files
+[0.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/beto/ROS_PROJECTS/scout/src/scout_slam' returned '0': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/scout_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_slam build --build-base /home/beto/ROS_PROJECTS/scout/build/scout_slam/build install --record /home/beto/ROS_PROJECTS/scout/build/scout_slam/install.log --single-version-externally-managed install_data
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam/bin'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/pkgconfig/scout_slam.pc'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam/lib/python3.10/site-packages'
+[0.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_slam', 'pythonpath')
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/pythonpath.ps1'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/pythonpath.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/hook/pythonpath.sh'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/home/beto/ROS_PROJECTS/scout/install/scout_slam/bin'
+[0.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_slam)
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/package.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/package.dsv'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/package.sh'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/package.bash'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/scout_slam/package.zsh'
+[0.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/beto/ROS_PROJECTS/scout/install/scout_slam/share/colcon-core/packages/scout_slam)
+[0.972s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.972s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.972s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.972s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.975s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.975s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.975s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.981s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/beto/ROS_PROJECTS/scout/install/local_setup.ps1'
+[0.982s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/beto/ROS_PROJECTS/scout/install/_local_setup_util_ps1.py'
+[0.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/beto/ROS_PROJECTS/scout/install/setup.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/beto/ROS_PROJECTS/scout/install/local_setup.sh'
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/beto/ROS_PROJECTS/scout/install/_local_setup_util_sh.py'
+[0.984s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/beto/ROS_PROJECTS/scout/install/setup.sh'
+[0.985s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/beto/ROS_PROJECTS/scout/install/local_setup.bash'
+[0.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/beto/ROS_PROJECTS/scout/install/setup.bash'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/beto/ROS_PROJECTS/scout/install/local_setup.zsh'
+[0.986s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/beto/ROS_PROJECTS/scout/install/setup.zsh'

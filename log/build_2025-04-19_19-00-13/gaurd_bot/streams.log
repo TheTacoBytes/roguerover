@@ -1,0 +1,20 @@
+[0.827s] Invoking command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data
+[1.037s] running egg_info
+[1.038s] writing ../../build/gaurd_bot/gaurd_bot.egg-info/PKG-INFO
+[1.038s] writing dependency_links to ../../build/gaurd_bot/gaurd_bot.egg-info/dependency_links.txt
+[1.038s] writing entry points to ../../build/gaurd_bot/gaurd_bot.egg-info/entry_points.txt
+[1.038s] writing requirements to ../../build/gaurd_bot/gaurd_bot.egg-info/requires.txt
+[1.038s] writing top-level names to ../../build/gaurd_bot/gaurd_bot.egg-info/top_level.txt
+[1.039s] reading manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+[1.040s] writing manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+[1.040s] running build
+[1.040s] running build_py
+[1.040s] running install
+[1.040s] running install_lib
+[1.041s] running install_data
+[1.041s] running install_egg_info
+[1.043s] removing '/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.043s] Copying ../../build/gaurd_bot/gaurd_bot.egg-info to /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot-0.0.0-py3.10.egg-info
+[1.043s] running install_scripts
+[1.061s] writing list of installed files to '/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log'
+[1.079s] Invoked command in '/home/beto/ROS_PROJECTS/scout/src/gaurd_bot' returned '0': PYTHONPATH=/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gaurd_bot build --build-base /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build install --record /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+/home/beto/ROS_PROJECTS/scout/build/scout_msgs/rosidl_adapter/scout_msgs:msg/ScoutActuatorState.idl
+/home/beto/ROS_PROJECTS/scout/build/scout_msgs/rosidl_adapter/scout_msgs:msg/ScoutLightCmd.idl
+/home/beto/ROS_PROJECTS/scout/build/scout_msgs/rosidl_adapter/scout_msgs:msg/ScoutLightState.idl
+/home/beto/ROS_PROJECTS/scout/build/scout_msgs/rosidl_adapter/scout_msgs:msg/ScoutRCState.idl
+/home/beto/ROS_PROJECTS/scout/build/scout_msgs/rosidl_adapter/scout_msgs:msg/ScoutStatus.idl

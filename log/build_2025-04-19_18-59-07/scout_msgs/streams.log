@@ -1,0 +1,348 @@
+[0.028s] Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake /home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/beto/ROS_PROJECTS/scout/install/scout_msgs
+[0.261s] -- The C compiler identification is GNU 11.4.0
+[0.261s] -- The CXX compiler identification is GNU 11.4.0
+[0.261s] -- Detecting C compiler ABI info
+[0.262s] -- Detecting C compiler ABI info - done
+[0.262s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.262s] -- Detecting C compile features
+[0.262s] -- Detecting C compile features - done
+[0.262s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.292s] -- Detecting CXX compile features
+[0.292s] -- Detecting CXX compile features - done
+[0.294s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.958s] -- Found Python3: /home/beto/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.225s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.271s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.280s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.290s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.310s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.354s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.394s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.420s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[2.306s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.295s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.625s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.746s] -- Found PythonInterp: /home/beto/.pyenv/shims/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.748s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.881s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.881s] -- Using PYTHON_EXECUTABLE: /home/beto/.pyenv/shims/python3
+[3.881s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.881s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.992s] -- Found PythonExtra: .so  
+[4.122s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.142s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.143s] -- Added test 'lint_cmake' to check CMake code style
+[4.145s] -- Added test 'xmllint' to check XML markup files
+[4.148s] -- Configuring done
+[4.184s] -- Generating done
+[4.195s] -- Build files have been written to: /home/beto/ROS_PROJECTS/scout/build/scout_msgs
+[4.202s] Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake /home/beto/ROS_PROJECTS/scout/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/beto/ROS_PROJECTS/scout/install/scout_msgs
+[4.203s] Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_msgs -- -j20 -l20
+[4.247s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.263s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.264s] [  3%] Built target ament_cmake_python_copy_scout_msgs
+[4.551s] running egg_info
+[4.552s] creating scout_msgs.egg-info
+[4.552s] writing scout_msgs.egg-info/PKG-INFO
+[4.553s] writing dependency_links to scout_msgs.egg-info/dependency_links.txt
+[4.553s] writing top-level names to scout_msgs.egg-info/top_level.txt
+[4.554s] writing manifest file 'scout_msgs.egg-info/SOURCES.txt'
+[4.555s] reading manifest file 'scout_msgs.egg-info/SOURCES.txt'
+[4.556s] writing manifest file 'scout_msgs.egg-info/SOURCES.txt'
+[4.585s] [  3%] Built target ament_cmake_python_build_scout_msgs_egg
+[4.822s] [  3%] Built target scout_msgs__cpp
+[4.833s] [  6%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_light_cmd__functions.c.o[0m
+[4.833s] [  6%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_actuator_state__functions.c.o[0m
+[4.834s] [  7%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_light_state__functions.c.o[0m
+[4.834s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.834s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.834s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.834s] [ 14%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_status__functions.c.o[0m
+[4.836s] [ 15%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_rc_state__functions.c.o[0m
+[4.901s] [ 17%] [32m[1mLinking C shared library libscout_msgs__rosidl_generator_c.so[0m
+[4.941s] [ 17%] Built target scout_msgs__rosidl_generator_c
+[4.955s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.955s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.955s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.641s] [ 23%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_light_cmd__type_support.cpp.o[0m
+[5.641s] [ 25%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_actuator_state__type_support.cpp.o[0m
+[5.644s] [ 26%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_rc_state__type_support.cpp.o[0m
+[5.644s] [ 28%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_light_state__type_support.cpp.o[0m
+[5.656s] [ 30%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_status__type_support.cpp.o[0m
+[5.665s] [ 31%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_light_state__type_support.cpp.o[0m
+[5.665s] [ 33%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_light_cmd__type_support.cpp.o[0m
+[5.666s] [ 34%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_rc_state__type_support.cpp.o[0m
+[5.666s] [ 36%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_actuator_state__type_support.cpp.o[0m
+[5.679s] [ 38%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_status__type_support.cpp.o[0m
+[5.846s] [ 39%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_light_cmd__type_support.cpp.o[0m
+[5.850s] [ 41%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_actuator_state__type_support.cpp.o[0m
+[5.853s] [ 42%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_light_state__type_support.cpp.o[0m
+[5.857s] [ 44%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_rc_state__type_support.cpp.o[0m
+[5.877s] [ 46%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_status__type_support.cpp.o[0m
+[5.909s] [ 47%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_actuator_state__type_support.cpp.o[0m
+[5.913s] [ 49%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_light_state__type_support.cpp.o[0m
+[5.920s] [ 50%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_light_cmd__type_support.cpp.o[0m
+[6.014s] [ 52%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_rc_state__type_support.cpp.o[0m
+[6.044s] [ 53%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_status__type_support.cpp.o[0m
+[6.131s] [ 55%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_c.so[0m
+[6.131s] [ 57%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_actuator_state__type_support.c.o[0m
+[6.147s] [ 58%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_light_cmd__type_support.c.o[0m
+[6.167s] [ 60%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_light_state__type_support.c.o[0m
+[6.188s] [ 61%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_rc_state__type_support.c.o[0m
+[6.188s] [ 63%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_actuator_state__type_support_c.cpp.o[0m
+[6.262s] [ 65%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_status__type_support.c.o[0m
+[6.281s] [ 65%] Built target scout_msgs__rosidl_typesupport_c
+[6.287s] [ 66%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_light_cmd__type_support_c.cpp.o[0m
+[6.320s] [ 68%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_light_state__type_support_c.cpp.o[0m
+[6.321s] [ 69%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_rc_state__type_support_c.cpp.o[0m
+[6.329s] [ 71%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_status__type_support_c.cpp.o[0m
+[6.406s] [ 73%] [32m[1mLinking C shared library libscout_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.476s] [ 73%] Built target scout_msgs__rosidl_typesupport_introspection_c
+[7.014s] [ 74%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_cpp.so[0m
+[7.083s] [ 74%] Built target scout_msgs__rosidl_typesupport_cpp
+[7.219s] [ 76%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.264s] [ 77%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.311s] [ 77%] Built target scout_msgs__rosidl_typesupport_introspection_cpp
+[7.371s] [ 77%] Built target scout_msgs__rosidl_typesupport_fastrtps_cpp
+[7.435s] [ 79%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.540s] [ 79%] Built target scout_msgs__rosidl_typesupport_fastrtps_c
+[7.573s] [ 79%] Built target scout_msgs
+[7.596s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.484s] [ 80%] Built target scout_msgs__py
+[8.505s] [ 82%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_py.dir/rosidl_generator_py/scout_msgs/msg/_scout_status_s.c.o[0m
+[8.505s] [ 84%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_py.dir/rosidl_generator_py/scout_msgs/msg/_scout_light_cmd_s.c.o[0m
+[8.506s] [ 87%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_py.dir/rosidl_generator_py/scout_msgs/msg/_scout_actuator_state_s.c.o[0m
+[8.506s] [ 87%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_py.dir/rosidl_generator_py/scout_msgs/msg/_scout_rc_state_s.c.o[0m
+[8.507s] [ 88%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_py.dir/rosidl_generator_py/scout_msgs/msg/_scout_light_state_s.c.o[0m
+[8.623s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/libscout_msgs__rosidl_generator_py.so[0m
+[8.661s] [ 90%] Built target scout_msgs__rosidl_generator_py
+[8.681s] [ 92%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.682s] [ 95%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.683s] [ 95%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.761s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.761s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.767s] [100%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.795s] [100%] Built target scout_msgs__rosidl_typesupport_c__pyext
+[8.799s] [100%] Built target scout_msgs__rosidl_typesupport_introspection_c__pyext
+[8.801s] [100%] Built target scout_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.812s] Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake --build /home/beto/ROS_PROJECTS/scout/build/scout_msgs -- -j20 -l20
+[8.813s] Invoking command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_msgs
+[8.820s] -- Install configuration: ""
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/ament_index/resource_index/rosidl_interfaces/scout_msgs
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.h
+[8.820s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.c
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.c
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.h
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.c
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.c
+[8.821s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.h
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.c
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.h
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.h
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.h
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/library_path.sh
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/library_path.dsv
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so
+[8.822s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so" to ""
+[8.822s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.822s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.822s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.822s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_c.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_c.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_c.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_c.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_c.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_c.so
+[8.823s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.823s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.823s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.hpp
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.hpp
+[8.823s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__builder.hpp
+[8.823s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__traits.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__builder.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__builder.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__traits.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__traits.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__traits.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__builder.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.hpp
+[8.824s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__traits.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__builder.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.hpp
+[8.825s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.825s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.825s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/dds_fastrtps
+[8.825s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.826s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.826s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.826s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.826s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_c.h
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_c.h
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_c.h
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.c
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.c
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.c
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_c.h
+[8.826s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.c
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_c.h
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.c
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so
+[8.827s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so
+[8.827s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so" to ""
+[8.827s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs
+[8.827s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg
+[8.827s] -- Up-to-date: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_cpp.hpp
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.cpp
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_cpp.hpp
+[8.827s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.cpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.cpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.cpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_cpp.hpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_cpp.hpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.cpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_cpp.hpp
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so
+[8.828s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.828s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so
+[8.829s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so" to ""
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/pythonpath.sh
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/pythonpath.dsv
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_c.c
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg
+[8.829s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd_s.c
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status_s.c
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state_s.c
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/__init__.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state_s.c
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state_s.c
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status.py
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.830s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.831s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/libscout_msgs__rosidl_generator_py.so
+[8.831s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/__init__.py
+[8.831s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.831s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.831s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.930s] Listing '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/__init__.py'...
+[8.930s] Listing '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/__init__.py'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state.py'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd.py'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state.py'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state.py'...
+[8.930s] Compiling '/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status.py'...
+[8.934s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.934s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.934s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.934s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.934s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.934s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.934s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_generator_py.so
+[8.934s] -- Set runtime path of "/home/beto/ROS_PROJECTS/scout/install/scout_msgs/lib/libscout_msgs__rosidl_generator_py.so" to ""
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.idl
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.idl
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.idl
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.idl
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.idl
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.msg
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.msg
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.msg
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.msg
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.msg
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/ament_index/resource_index/package_run_dependencies/scout_msgs
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/ament_index/resource_index/parent_prefix_path/scout_msgs
+[8.935s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.sh
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.dsv
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/path.sh
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/environment/path.dsv
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/local_setup.bash
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/local_setup.sh
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/local_setup.zsh
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/local_setup.dsv
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.dsv
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/ament_index/resource_index/packages/scout_msgs
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport.cmake
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.936s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cppExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.937s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig-version.cmake
+[8.938s] -- Installing: /home/beto/ROS_PROJECTS/scout/install/scout_msgs/share/scout_msgs/package.xml
+[8.940s] Invoked command in '/home/beto/ROS_PROJECTS/scout/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/beto/ROS_PROJECTS/scout/install/scout_slam:/home/beto/ROS_PROJECTS/scout/install/gaurd_bot:/opt/ros/humble /usr/bin/cmake --install /home/beto/ROS_PROJECTS/scout/build/scout_msgs

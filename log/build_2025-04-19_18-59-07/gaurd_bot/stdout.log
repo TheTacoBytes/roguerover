@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/gaurd_bot/gaurd_bot.egg-info
+writing ../../build/gaurd_bot/gaurd_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/gaurd_bot/gaurd_bot.egg-info/dependency_links.txt
+writing entry points to ../../build/gaurd_bot/gaurd_bot.egg-info/entry_points.txt
+writing requirements to ../../build/gaurd_bot/gaurd_bot.egg-info/requires.txt
+writing top-level names to ../../build/gaurd_bot/gaurd_bot.egg-info/top_level.txt
+writing manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+reading manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+writing manifest file '../../build/gaurd_bot/gaurd_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build
+creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib
+creating /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot
+copying gaurd_bot/__init__.py -> /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot
+running install
+running install_lib
+creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot
+copying /home/beto/ROS_PROJECTS/scout/build/gaurd_bot/build/lib/gaurd_bot/__init__.py -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot
+byte-compiling /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index
+creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index
+creating /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index/packages
+copying resource/gaurd_bot -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/share/gaurd_bot
+running install_egg_info
+Copying ../../build/gaurd_bot/gaurd_bot.egg-info to /home/beto/ROS_PROJECTS/scout/install/gaurd_bot/lib/python3.10/site-packages/gaurd_bot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/beto/ROS_PROJECTS/scout/build/gaurd_bot/install.log'
