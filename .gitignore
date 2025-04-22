@@ -1,9 +1,9 @@
-/*
-!/scout/
-/scout/*
-!/scout/src/
-#/rr_ws/src/*
+# /*
+# !/scout/
+# /scout/*
+# !/scout/src/
+# #/rr_ws/src/*
 
 
-!.gitignore
-!LICENSE.md
+# !.gitignore
+# !LICENSE.md
